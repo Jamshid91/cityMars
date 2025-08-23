@@ -76,6 +76,10 @@
         display: block;
       }
 
+      .header-nav {
+        transform: none;
+      }
+
       .main {
         .block1 {
             .title-subtext {
@@ -381,6 +385,11 @@
         position: relative;
         .swiper-block2 {
           margin-top: 22px;
+        }
+        .swiper-btns {
+          .prev, .next {
+            top: 50%;
+          }
         }
   
         .view-all {

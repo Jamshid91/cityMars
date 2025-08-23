@@ -7,31 +7,10 @@
 }
 @font-face {
   font-family: "RobotoFlex";
-  src: url(../font/RobotoFlex-light.ttf) format("truetype");
+  src: url(../font/RobotoFlex.ttf) format("truetype");
+  font-optical-sizing: auto;
   font-style: normal;
-  font-weight: 300;
-  font-display: fallback;
-}
-@font-face {
-  font-family: "RobotoFlex";
-  src: url(../font/RobotoFlex-Regular.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 400;
-  font-display: fallback;
-}
-@font-face {
-  font-family: "RobotoFlex";
-  src: url(../font/RobotoFlex-medium.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 500;
-  font-display: fallback;
-}
-@font-face {
-  font-family: "RobotoFlex";
-  src: url(../font/RobotoFlex-bold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: 700;
-  font-display: fallback;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
 }
 *, *::before, *::after {
   margin: 0;
@@ -47,7 +26,7 @@ body {
   font-family: "RobotoFlex", sans-serif;
   line-height: 100%;
   font-weight: 400;
-  letter-spacing: -1px;
+  font-variation-settings: "wght" 400, "wdth" 120;
 }
 
 .bodyStopScroll {
@@ -302,6 +281,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 100%;
   font-weight: 400;
   color: #000;
+  font-variation-settings: "wght" 400, "wdth" 120;
 }
 .page-title br {
   display: none;
@@ -314,6 +294,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #424247;
   position: relative;
   padding-left: 56px;
+  font-variation-settings: "wght" 400, "wdth" 120;
 }
 .title-text::before {
   content: "";
@@ -382,6 +363,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 20px;
   line-height: 100%;
   font-weight: 400;
+  font-variation-settings: "wght" 371, "wdth" 120;
 }
 .view-all span {
   display: inline-block;
@@ -408,6 +390,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 23.95px;
   line-height: 100%;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   color: #282f35;
 }
 .logo span {
@@ -427,6 +410,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .header-nav {
   display: flex;
+  transform: translateX(10%);
 }
 .header-nav li {
   font-size: 20px;
@@ -435,6 +419,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #3a3f41;
   margin-right: 30px;
   transition: 0.3s all;
+  font-variation-settings: "wght" 371, "wdth" 120;
 }
 .header-nav li:hover {
   color: #E87537;
@@ -566,6 +551,9 @@ h1, h2, h3, h4, h5, h6, p {
 .main .block2 .swiper-block2 {
   margin-top: 37px;
 }
+.main .block2 .swiper-btns .prev, .main .block2 .swiper-btns .next {
+  top: 38%;
+}
 .main .block2-item .item-photo {
   position: relative;
   border-radius: 20px;
@@ -634,6 +622,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 24px;
   line-height: 100%;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   color: #2d2d33;
 }
 .main .block3-item .item-title br {
@@ -653,12 +642,14 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 40px;
   line-height: 130%;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   color: #e87537;
 }
 .main .block3-item .item-info .info-subtitle {
   font-size: 18px;
   line-height: 130%;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   color: #7C7C7C;
 }
 .main .block4 {
@@ -700,6 +691,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 22px;
   line-height: 130%;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   color: #424247;
   margin: 43px 0;
 }
@@ -743,13 +735,15 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 26px;
   line-height: 100%;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   color: #424247;
 }
 .main .block5-item .item-text {
   font-size: 20px;
   line-height: 100%;
   color: #7e7e7e;
-  font-weight: 300;
+  font-weight: 350;
+  font-variation-settings: "wght" 350, "wdth" 120;
   margin-top: 30px;
 }
 .main .wrapper {
@@ -813,6 +807,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 22px;
   line-height: 100%;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   color: #424247;
   margin-bottom: 4px;
   transition: 0.3s all;
@@ -824,6 +819,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 22px;
   line-height: 130%;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   font-weight: normal;
   color: #989898;
 }
@@ -866,6 +862,7 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: center;
   font-size: 20px;
   font-weight: 300;
+  font-variation-settings: "wght" 371;
   color: #424247;
   cursor: pointer;
 }
@@ -1018,12 +1015,14 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 22px;
   line-height: 100%;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   color: #e87537;
 }
 .main .block8-item .item-text {
   font-size: 20px;
   line-height: 130%;
-  font-weight: 300;
+  font-weight: 350;
+  font-variation-settings: "wght" 350;
   color: #2a2b34;
   margin-top: 12px;
 }
@@ -1072,7 +1071,8 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 47px;
   font-size: 20px;
   line-height: 130%;
-  font-weight: 400;
+  font-weight: 350;
+  font-variation-settings: "wght" 350;
   color: #2a2b34;
 }
 .main .block10-info .info-list {
@@ -1181,7 +1181,8 @@ h1, h2, h3, h4, h5, h6, p {
 .footer-nav li {
   font-size: 20px;
   line-height: 100%;
-  font-weight: 400;
+  font-weight: 350;
+  font-variation-settings: "wght" 350, "wdth" 120;
   color: #424247;
   margin-bottom: 12px;
   transition: 0.3s linear;
@@ -1202,6 +1203,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 20px;
   line-height: 100%;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   color: #424247;
   margin-top: 18px;
 }
@@ -1261,6 +1263,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 36px;
   line-height: 40px;
   font-weight: 500;
+  font-variation-settings: "wght" 500, "wdth" 120;
   text-align: center;
   color: #393939;
 }
@@ -1372,6 +1375,9 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .header-links .phone-num.icon {
     display: block;
+  }
+  .header-nav {
+    transform: none;
   }
   .main .block1 .title-subtext {
     font-size: 30px;
@@ -1609,6 +1615,9 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .main .block2 .swiper-block2 {
     margin-top: 22px;
+  }
+  .main .block2 .swiper-btns .prev, .main .block2 .swiper-btns .next {
+    top: 50%;
   }
   .main .block2 .view-all {
     position: absolute;
