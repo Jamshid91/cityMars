@@ -1,6 +1,7 @@
 $('.menu-btn').click(function() {
   $(this).toggleClass('clicked');
-  $('.menu').toggleClass('showMenu');
+  $('.menu').toggleClass('d-none');
+  $('body').toggleClass('bodyStopScroll');
 });
 
 $('.filter-btn').click(function() {
@@ -19,10 +20,15 @@ $('.filter-options li').click(function() {
   $(this).parent().parent().removeClass('showFilter');
 });
 
-document.addEventListener('click', (e) => {
-  let elem = document.querySelector('.filter-btn')
+$(document).click(function() {
+  var elem = $('.filter-btn')
   elem.parentElement.contains(e.target) || elem.parentElement.classList.remove('showFilter')
-})
+});
+
+// document.addEventListener('click', (e) => {
+//   let elem = document.querySelector('.filter-btn')
+//   elem.parentElement.contains(e.target) || elem.parentElement.classList.remove('showFilter')
+// })
 
 
 const block2 = new Swiper('.swiper-block2', {
