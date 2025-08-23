@@ -346,6 +346,11 @@
 
 
 @media (max-width: 767px) {
+  .btn {
+    width: 252px;
+    height: 55px;
+    font-size: 18px;
+  }
     .header .container {
       padding: 16px 15px 19px;
     }
@@ -453,6 +458,7 @@
             margin-top: 14px;
             .info {
               width: 50%;
+              margin-right: 0;
               &-title {
                 font-size: 20px;
               }
