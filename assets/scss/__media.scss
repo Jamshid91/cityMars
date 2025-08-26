@@ -30,6 +30,12 @@
       }
 }
 
+@media (max-width: 1420px) {
+  .header-nav {
+    transform: translateX(5%);
+}
+}
+
 @media (max-width: 1280px) {
     .logo {
        font-size: 23.95px; 
