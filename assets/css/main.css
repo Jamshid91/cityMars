@@ -343,17 +343,26 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .swiper-pagination-bullet {
-  width: 16px;
-  height: 17px;
-  background: #d9d9d9;
-  border: 3px solid #fff;
+  min-width: 16px;
+  height: 16px;
+  background: transparent;
   opacity: 1;
   transition: 0.3s all;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-pagination-bullet::before {
+  content: url(../img/svg/dote.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.swiper-pagination-bullet-active {
-  background: #fff;
-  border-color: #E87537;
+.swiper-pagination-bullet-active::before {
+  content: url(../img/svg/dote-active.svg);
 }
 
 .view-all {
