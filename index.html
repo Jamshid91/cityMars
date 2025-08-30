@@ -58,6 +58,7 @@
                     <li><a href="./reklamnye_videoroliki.html">Изготовление роликов</a></li>
                     <li><a href="./o_kompanii.html">О компании</a></li>
                     <li><a href="./kontakty.html">Контакты</a></li>
+                    <li><a href="./politika_konfidencialnosti.html">Политика конфиденциальности</a></li>
                 </ul>
                 <a href="./index.html" class="logo">City<span>Mars</span></a>
             </div>
@@ -275,7 +276,7 @@
                                         <h3 class="item-title">ВТБ Арена Парк</h3>
                                         <p class="item-text">Современный квартал у метро «Динамо» и «Петровского парка» в 10 минутах езды от Кремля.</p>
                                     </div>
-                                    <img loading="lazy" src="assets/img/svg/brend1.svg" alt="" class="item-logo">
+                                    <img loading="lazy" src="assets/img/svg/logo.svg" alt="" class="item-logo">
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -284,7 +285,7 @@
                                         <h3 class="item-title">Панавто Сити</h3>
                                         <p class="item-text">Официальный дилер Mersedec-Benz</p>
                                     </div>
-                                    <img loading="lazy" src="assets/img/svg/brend2.svg" alt="" class="item-logo">
+                                    <img loading="lazy" src="assets/img/svg/logo.svg" alt="" class="item-logo">
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -293,7 +294,7 @@
                                         <h3 class="item-title">Genesis</h3>
                                         <p class="item-text">Марка автомобилей премиум класса, являющаяся суббрендом компании Hyundai Motor.</p>
                                     </div>
-                                    <img loading="lazy" src="assets/img/svg/brend3.svg" alt="" class="item-logo">
+                                    <img loading="lazy" src="assets/img/svg/logo.svg" alt="" class="item-logo">
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -302,7 +303,7 @@
                                         <h3 class="item-title">Мираторг</h3>
                                         <p class="item-text">Системообразующая российская агропромышленная компания. Крупнейший вертикально-интегрированный агрохолдинг в России</p>
                                     </div>
-                                    <img loading="lazy" src="assets/img/svg/brend4.svg" alt="" class="item-logo">
+                                    <img loading="lazy" src="assets/img/svg/logo.svg" alt="" class="item-logo">
                                 </div>
                             </div>
                         </div>
@@ -333,6 +334,7 @@
                 <li><a href="./reklamnye_videoroliki.html">Изготовление рекламных роликов</a></li>
                 <li><a href="./o_kompanii.html">О компании</a></li>
                 <li><a href="./kontakty.html">Контакты</a></li>
+                <li><a href="./politika_konfidencialnosti.html">Политика конфиденциальности</a></li>
             </ul>
 
             <a href="./index.html" class="logo">City<span>Mars</span></a>
@@ -361,7 +363,49 @@
         </div>
     </footer>
 
+
+    <!-- Оформить заявку -->
+    <div class="popUp popUp_apply-now d-none">
+        <div class="popUp-content">
+            <div class="popUp-close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 7L7 25" stroke="#A6A6A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 25L7 7" stroke="#A6A6A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="content_form">
+                <h2 class="popUp-title">Оформить <br> заявку</h2>
+                <form class="form">
+                    <div class="input-box">
+                        <input type="text" class="form-inp name" name="Имя" placeholder="Имя">
+                        <small></small>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="form-inp phone" name="Имя" placeholder="+7 (999) 999 99 99">
+                        <small></small>
+                    </div>
+                    <div class="input-box">
+                        <textarea class="form-text message" name="Комментарий" placeholder="Комментарий"></textarea>
+                        <small></small>
+                    </div>
+                    <button class="submit-btn btn" type="button">Отправить</button>
+                </form>
+                <p class="popUp-text">Нажимая на кнопку, вы принимаете условия <a href="./politika_konfidencialnosti.html">политики обработки персональных данных</a></p>
+            </div>
+        
+            <div class="content_thanks d-none">
+                <h2 class="popUp-title">Заявка <br> отправлена</h2>
+                <p class="popUp-subtitle">Благодарим за обращение! <br>
+                    В ближайшее время с вами свяжется  <br>
+                    специалист. 
+                    </p>
+    
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/plugin/jquery.js"></script>
+    <script src="assets/js/plugin/mask.js"></script>
     <script src="assets/js/plugin/swiper.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
