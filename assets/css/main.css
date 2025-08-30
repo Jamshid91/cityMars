@@ -2453,11 +2453,16 @@ h1, h2, h3, h4, h5, h6, p {
     height: 260px;
   }
   .main .block11-videos .video .play-btn {
-    width: 48px;
-    height: 48px;
+    width: 48px !important;
+    height: 48px !important;
   }
   .main .block11-videos .video .play-btn svg {
     width: 8.6px;
+  }
+  .main .block11-videos .startVideo .play-btn {
+    width: 48px !important;
+    height: 48px !important;
+    display: none;
   }
   .main .block11 .discuss-btn {
     height: 260px;
@@ -2575,7 +2580,7 @@ h1, h2, h3, h4, h5, h6, p {
     height: 198px;
     font-size: 16px;
   }
-  .main .services-item .item .service-img img {
+  .main .services-item .item .service-img img.logo-img {
     width: 85%;
   }
   .main .screens .filter-btn {

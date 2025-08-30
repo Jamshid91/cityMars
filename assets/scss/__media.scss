@@ -883,12 +883,19 @@
           .video {
             height: 260px;
             .play-btn {
-              width: 48px;
-              height: 48px;
+              width: 48px !important;
+              height: 48px !important;
               svg {
                 width: 8.6px;
               }
             }
+        }
+        .startVideo {
+          .play-btn {
+            width: 48px !important;
+            height: 48px !important;
+            display: none;
+          }
         }
         }
       .discuss-btn {
@@ -1033,7 +1040,7 @@
     }
 
     
-    .services-item .item .service-img img {
+    .services-item .item .service-img img.logo-img {
       width: 85%;
     }
     .screens {

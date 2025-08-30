@@ -184,6 +184,7 @@ $(".popUp-close").click(function(){
   $('.content_form').removeClass('d-none')
   $('.content_thanks').addClass('d-none')
   $('.content_form .form').children('.input-box').children('.form-inp').val('')
+  $('.content_form .form').children('.input-box').children('.form-text').val('')
   $('body').removeClass('bodyStopScroll')
 });
 
