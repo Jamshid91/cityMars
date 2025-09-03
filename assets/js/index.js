@@ -19,8 +19,13 @@ $('.service-head').click(function() {
 })
 
 
-const block2 = new Swiper('.swiper-block2', {
-  loop: true,
+var block2 = new Swiper('.swiper-block2', {
+  loop: true, allowTouchMove: true, 
+  simulateTouch: false, 
+  slideToClickedSlide: false, 
+  touchReleaseOnEdges: false, 
+  a11y: false, 
+  watchSlidesProgress: true,
 
   pagination: {
     el: '.pagination-block2',
@@ -88,8 +93,6 @@ const block5 = new Swiper('.swiper-block5', {
 
 const block7 = new Swiper('.swiper-block7', {
   spaceBetween: 10,
-  slidesPerView: 1,
-  loop: true,
 
   navigation: {
     nextEl: '.next-block7',
@@ -100,43 +103,232 @@ const block7 = new Swiper('.swiper-block7', {
     el: '.pagination-block7',
     clickable: true,
   },
+  on: {
+    init: function () {
+      funcBlock7(this);
+    },
+    slideChange: function () {
+      funcBlock7(this);
+    }
+  }
 });
+function funcBlock7(screen_1) {
+  var currentBlock7 = screen_1.activeIndex + 1;
+  var totalBlock7 = screen_1.slides.length;
+
+  document.querySelector('.current-block7').textContent = currentBlock7;
+  document.querySelector('.total-block7').textContent = totalBlock7;
+}
+
+
+
+const banner = new Swiper('.swiper-banner', {
+  spaceBetween: 10,
+  slidesPerView: 1,
+  loop: false,
+  pagination: {
+    el: '.pagination-banner',
+    type: 'fraction',
+    renderFraction: function(currentClass, tottalClass) {
+        return `<span class="' + ${currentClass} +'"></span> `+ '/' + `<span class="' + ${tottalClass} +'"></span> ` 
+    }
+  },
+
+
+});
+
+// ****** swiper-1 ***************
+const screen_1 = new Swiper('.swiper-screen_1', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.next-screen_1',
+    prevEl: '.prev-screen_1',
+  },
+  pagination: {
+    el: '.pagination-screen_1',
+    clickable: true,
+  },
+  on: {
+    init: function () {
+      funcScreen_1(this);
+    },
+    slideChange: function () {
+      funcScreen_1(this);
+    }
+  }
+
+});
+function funcScreen_1(screen_1) {
+  var currentScreen_1 = screen_1.activeIndex + 1;
+  var totalScreen_1 = screen_1.slides.length;
+
+  document.querySelector('.current-screen_1').textContent = currentScreen_1;
+  document.querySelector('.total-screen_1').textContent = totalScreen_1;
+}
+
+// ****** swiper-2 ***************
+const screen_2 = new Swiper('.swiper-screen_2', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.next-screen_2',
+    prevEl: '.prev-screen_2',
+  },
+  pagination: {
+    el: '.pagination-screen_2',
+    clickable: true,
+  },
+  on: {
+    init: function () {
+      funcScreen_2(this);
+    },
+    slideChange: function () {
+      funcScreen_2(this);
+    }
+  }
+
+});
+function funcScreen_2(screen_2) {
+  var currentScreen_2 = screen_2.activeIndex + 1;
+  var totalScreen_2 = screen_2.slides.length;
+
+  document.querySelector('.current-screen_2').textContent = currentScreen_2;
+  document.querySelector('.total-screen_2').textContent = totalScreen_2;
+}
+
+// ****** swiper-3 ***************
+const screen_3 = new Swiper('.swiper-screen_3', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.next-screen_3',
+    prevEl: '.prev-screen_3',
+  },
+  pagination: {
+    el: '.pagination-screen_3',
+    clickable: true,
+  },
+  on: {
+    init: function () {
+      funcScreen_3(this);
+    },
+    slideChange: function () {
+      funcScreen_3(this);
+    }
+  }
+
+});
+function funcScreen_3(screen_3) {
+  var currentScreen_3 = screen_3.activeIndex + 1;
+  var totalScreen_3 = screen_3.slides.length;
+
+  document.querySelector('.current-screen_3').textContent = currentScreen_3;
+  document.querySelector('.total-screen_3').textContent = totalScreen_3;
+}
+
+// ****** swiper-4 ***************
+const screen_4 = new Swiper('.swiper-screen_4', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.next-screen_4',
+    prevEl: '.prev-screen_4',
+  },
+  pagination: {
+    el: '.pagination-screen_4',
+    clickable: true,
+  },
+  on: {
+    init: function () {
+      funcScreen_4(this);
+    },
+    slideChange: function () {
+      funcScreen_4(this);
+    }
+  }
+
+});
+function funcScreen_4(screen_4) {
+  var currentScreen_4 = screen_4.activeIndex + 1;
+  var totalScreen_4 = screen_4.slides.length;
+
+  document.querySelector('.current-screen_4').textContent = currentScreen_4;
+  document.querySelector('.total-screen_4').textContent = totalScreen_4;
+}
+
+// ****** swiper-5 ***************
+const screen_5 = new Swiper('.swiper-screen_5', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.next-screen_5',
+    prevEl: '.prev-screen_5',
+  },
+  pagination: {
+    el: '.pagination-screen_5',
+    clickable: true,
+  },
+  on: {
+    init: function () {
+      funcScreen_5(this);
+    },
+    slideChange: function () {
+      funcScreen_5(this);
+    }
+  }
+
+});
+function funcScreen_5(screen_5) {
+  var currentScreen_5 = screen_5.activeIndex + 1;
+  var totalScreen_5 = screen_5.slides.length;
+
+  document.querySelector('.current-screen_5').textContent = currentScreen_5;
+  document.querySelector('.total-screen_5').textContent = totalScreen_5;
+}
+
+// ****** swiper-6 ***************
+const screen_6 = new Swiper('.swiper-screen_6', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.next-screen_6',
+    prevEl: '.prev-screen_6',
+  },
+  pagination: {
+    el: '.pagination-screen_6',
+    clickable: true,
+  },
+  on: {
+    init: function () {
+      funcScreen_6(this);
+    },
+    slideChange: function () {
+      funcScreen_6(this);
+    }
+  }
+
+});
+function funcScreen_6(screen_6) {
+  var currentScreen_6 = screen_6.activeIndex + 1;
+  var totalScreen_6 = screen_6.slides.length;
+
+  document.querySelector('.current-screen_6').textContent = currentScreen_6;
+  document.querySelector('.total-screen_6').textContent = totalScreen_6;
+}
+
+
 
 
 
 
 $(document).ready(function() {
   $('.submit-btn').click(function() {
-      var name = $(this).parent().children('.input-box').children('.name');
       var phone = $(this).parent().children('.input-box').children('.phone');
-      var message = $(this).parent().children('.input-box').children('.message');
-
-      console.log(name)
-  
-      var nameVal = name.val();
       var phoneVal = phone.val();
-      var messageVal = message.val();
-
-      if (nameVal == '') {
-          setError(name);
-      } else {
-          setSuccess(name);
-      }
 
       if (phoneVal === '' || phoneVal.substr(-1) === '_') {
           setError(phone);
       } else {
           setSuccess(phone);
       }
-
-      if (messageVal == '') {
-          setError(message);
-      } else {
-          setSuccess(message);
-      }
   
   
-      if (phone.next().hasClass('success') && name.next().hasClass('success') && message.next().hasClass('success')) {
+      if (phone.next().hasClass('success')) {
         $(this).parent().parent().addClass('d-none');
         $(this).parent().parent().next().removeClass('d-none');
         
